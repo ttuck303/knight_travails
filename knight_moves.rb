@@ -2,7 +2,7 @@ class Space
 	attr_accessor :value, :parent
 
 	def initialize (value, parent = nil)
-		@value = value
+		@value = value if value.size == 2
 		@parent = parent
 	end
 end
